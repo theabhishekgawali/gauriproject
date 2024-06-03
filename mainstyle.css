@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    background-color: #fff;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 5px 15px;
+    z-index: 999;
+    position:relative;
+    top: 0%;
+    left: 0%;
+}
+
+#header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+#header .logo .logo_name{
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+#header img{
+
+    height: 100px;
+    weight: 100px;
+    margin-top: 50px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(209, 44, 42);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(245, 247, 245);
+    color: rgb(234, 15, 15);
+    font-weight: 800;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar button{
+    background-color: #060606; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#navbar button:hover{
+    background-color: #f7dc54;
+    color: #060606;
+    cursor: pointer;
+}
+
+
+/* hero section  */
+
+#hero{
+    /* background-image: url(img/hero4.png); */
+    width: 100%;
+    height: 70vh;
+    /* background-size: cover; */
+    /* background-position: top 25% right 0%; */
+    margin-top: 6rem;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px;
+    padding: 0 40px;
+}
+#hero .main .text{
+    background: url(Group\ 35930.png);
+    background-repeat: no-repeat;
+    position: relative;
+    
+   
+    
+}
+#hero .main .text h1{
+    font-weight: 800;
+    font-size: 50px;
+}
+#hero .main .text p{
+    font-weight: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+#hero .main .button{
+    padding: 20px  20px;
+}
+#hero .main .button button{
+    background-color: #060606; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+     
+}
+#hero .main .button .btn2{
+    background-color: white;
+    color: black;
+
+}
+#hero .main .topic .achivement{
+    height: 80px;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+#hero .layer{
+    /* background-image: url(Group\ 35887\ \(2\).png) ,url(iPhone-13-Pro-Front.png) , 
+                      url(iPhone-13-Pro-Front\ \(6\).png) , url(iPhone-13-Pro-Front\ \(5\).png);
+                      
+                      background-position: right bottom, left top;
+                      background-repeat: no-repeat, repeat; */
+
+    position: relative;
+    margin-left: 40px;
+    margin-top: 0rem;
+    /* background-image: url(Group\ 35930.png);
+    background-size: cover;
+    background-position: 50px 20px; */
+    /* background: linear-gradient(135deg , rgba(232, 121, 121, 0) , rgba(203, 190, 109, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px; */
+    border-radius: 50px;
+}
+#hero .img0{
+    position: absolute;
+    left:80px;
+    top: 80px;
+    height: 90vh;
+    border-radius: 5rem 10rem 7rem 2rem;
+   
+}
+#hero .img1{
+    position: relative;
+    left:-80px;
+    top: -20px;
+    height: 90vh;
+    transform: rotate(15deg);
+}
+#hero .img2{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+#hero .img3{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    transform: rotate(-15deg);
+}
+#hero .img4{
+    position: absolute;
+    left: -100px;
+    top: -30px;
+}
+
+
+
+/* section feature  */
+
+#features{
+    width: 100%;
+    height: 70vh;  
+    margin-top: 20rem;
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+#features .divide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#features .divide .img0{
+    position: absolute;
+    left:12rem;
+    bottom: -65rem;
+
+    /* bottom: -80px; */
+    height: 90vh;
+    border-radius: 5rem 10rem 7rem 2rem;
+   
+}
+
+#features .divide .img1{
+    margin-top: 10rem;
+    position: relative;
+    left:80px;
+    top: 0px;
+    height: 85vh;
+    transform: rotate(15deg);
+}
+
+#features .divide .mobile .imgnew{
+    position: absolute;
+    height: 90vh;
+    left: 15rem;
+    bottom: -70rem;
+    /* transform: rotate(15deg); */
+
+
+    /* left: 30px;
+    top: 20px; */
+    /* transform: rotate(-15deg); */
+}
+#features .info{
+    padding: 70px 40px ;
+}
+#features .info .head{
+    padding: 50px 50px;
+}
+#features .info .head h2{
+    font-size: 18px;
+    color: red;
+    text-transform: uppercase;
+}
+#features .info .head h2{
+    font-size: 22px;
+padding-top: 5px;}
+
+#features .info .side_head .head3{
+    font-size: 20px;
+    color: black;
+    font-style: bold;
+}
+#features .info .side_head .para{
+    color: #434845;
+    margin-top: 5px;
+
+
+}
+#features .info .side_head{
+    padding: 30px 40px;
+}
+#features .info .side_head i{
+    color: red;
+}
+
+/* advantages secvtion */
+
+
+#advantages{
+    width: 100%;
+    height: 70vh;  
+    /* margin-top: 20rem; */
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ 
+}
+
+#advantages .divide1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px ;
+}
+
+#advantages .divide1 .info1{
+    padding-left: 20px;
+}
+
+#advantages .divide1 .info1 h2{
+ font-size: 18px;
+ color: red;
+ text-transform: uppercase;
+}
+#advantages .divide1 .info1 h1{
+    font-size: 28px;
+   }
